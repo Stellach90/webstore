@@ -1,0 +1,146 @@
+/*color theme:
+backtype: #ffffff;
+maincolor: #024886;
+babypink: #f0b5b1;
+grey: #606060;
+pointcolor: #e03c32;
+*/
+
+
+
+.header-top{padding: 0px 26px;}
+.header-top .topbar{display: grid; grid-template-columns: auto 17px; padding: 10px 19px;}
+.header-top .logo{width: 230px; margin-left: auto; margin-right: auto;}
+.header-top .logoimg{width: 300px; padding: 40px 0;}
+
+.header-top nav{height: 190px;}
+.header-top nav .mymanu input{display: none;}
+.header-top nav .mymanu aside {position: fixed; top: 0; left: -200px; width: 200px; background-color: #f0b5b1; transition: left 0.4s;}
+.header-top nav .mymanu :checked~aside {left: 0;}
+.header-top nav .mymanu :checked~main{padding-left: 200px;}
+.header-top nav .mymanu aside label{position: absolute; top: 10px; right: -40px; width: 33px; height: 33px; background-color: #f0b5b1; cursor: pointer;}
+.header-top nav .mymanu aside label i{color: #ffffff; position: absolute; left: 51%; margin: 2px 0 0 -12px; width: 23px; height: 2px; background-color: #ffffff;}
+.header-top nav .mymanu aside label i:nth-child(1) {top: 21%;}
+.header-top nav .mymanu aside label i:nth-child(2) {top: 44%;}
+.header-top nav .mymanu aside label i:nth-child(3) {top: 68%;}
+.header-top nav .mymanu aside a{color: #ffffff;}
+.header-top nav .mymanu aside a:hover{color: #024886;}
+.header-top nav .mymanu aside .mypage li{float: left; margin-top: 5px; margin-right: 8px;}
+.header-top nav .mymanu aside .mypage i{margin-top: 6px;}
+.header-top nav .mymanu aside .mypagelist{padding-left: 40px;}
+.header-top nav .mymanu aside .mypagelist li+li{padding-top: 12px;}
+.header-top nav .mymanu aside .mypagelist .material-icons{float: left; display: block; line-height: 30px; color: #ffffff;}
+.header-top nav .mymanu aside .mypagelist li:hover .material-icons{color: #024886;}
+
+
+
+.header-top nav .topMenu .item {float: left; width: 25%;}
+.header-top nav .topMenu .item .tit {text-align: center; font-size: 1.2em; line-height: 40px; cursor: pointer;}
+.header-top nav .topMenu .item ul {overflow: hidden; height: 0; background-color: #fff; transition: height 0.3s; padding: 0;}
+.header-top nav .topMenu .item:hover ul {height: 145px;}
+.header-top nav .topMenu .item ul li {line-height: 29px; color: #999; text-align: center; cursor: pointer;}
+.header-top nav .topMenu .item ul li:hover {color: #024886;}
+.header-top nav .cnt {height: 200px; clear: both;}
+
+
+.header-top form{display: grid; grid-template-columns: 9em 1.7em; padding-left: 10px;}
+.header-top form .searchbar{border-style: none;}
+.header-top form .searchbtn{border-style: none; font-size: 0.7em; cursor: pointer;}
+.header-top form .searchbar input{width: 100%;}
+.header-top form .searchbtn i{font-size: 2em; line-height: 1.2em;}
+
+.header-top .top-icon{ display: grid; grid-template-columns: 2.2em 2.2em; padding: 0; font-size: 0.7em;}
+
+.header-top .top-icon li:hover a {color: #024886;}
+.header-top .top-icon li a i{font-size: 1.5em; line-height: 1.5em;}
+
+.container h1{border-bottom: 8px dotted #f0b5b1;}
+.container form{overflow: hidden;}
+.container form h2{display: block; margin: 10px;}
+.container form fieldset{border-style: none; display: inline-block;}
+.container form fieldset h3{padding: 10px 15px;}
+.container form fieldset+fieldset{padding-left: 35px;}
+.container form fieldset:nth-child(1){position: relative; bottom: 100px;}
+.container ul{padding-left: 10px;}
+.container form .rating ol{padding-left: 10px;}
+.container form .rating ol li{display: block;}
+.container form .rating ol li i{position: relative; top: 7px; color: #f0b5b1;}
+
+main{margin: auto; padding: 40px 20px;}
+main section .sale{position: absolute; width: 60px; height: 60px; background-size: cover;}
+main section{width: 100%; text-align: center;}
+main section h2{margin-bottom: 0; margin-top: 50px;}
+main section article{padding-top: 40px;}
+main section article .productimg{display: inline-block;}
+main section article img{cursor: pointer;}
+main section article h3{margin-top: 0;}
+main section article h3 a{font-size: 1.5em;}
+main section article p{padding: 10px 20px; margin-bottom: 0;}
+main section article dl{ display: grid; grid-template-columns: auto auto; width: 255px; height: 120px; padding: 0; margin: auto; margin-top: 20px; font-size: 1em; align-items: center;}
+main section article dl dd:nth-last-child(1){font-size: 0.8em;}
+main section article .material-icons{font-size: 0.8em;}
+main section article div a{left: 120px; bottom: 32px; font-size: 0.9em;}
+main section article div a:hover {color: #024886;}
+main section article div span{font-size: 1.9em;}
+main section article div span del{font-size: 0.7em; color: #606060; padding-right: 10px;}
+main section article div span ins{text-decoration: none; color: #e03c32;}
+main section article button{border: none;}
+main section article .price{position: static;}
+main section article .price button i{font-size: 19px; cursor: pointer;}
+main section article .price button:hover i{color: #e03c32;}
+
+main footer{padding-top: 20px;}
+main footer p{font-size: 1.2em;}
+main footer ol{display: inline-block; width: 160px; height: 50px; line-height: 50px; padding: 5px 15px; margin: 0;}
+main footer ol li{display: inline-block;}
+main footer ol li+li{padding-left: 10px;}
+main footer ol li a{display: inline-block;}
+main footer ol li:hover a{color: #024886; text-decoration: underline; font-size: 1.4em;}
+main footer img{width: 60%; padding-top: 50px;}
+
+/*footer*/
+.info{height: 100%; padding: 50px;}
+.info p{text-align: center; padding-bottom: 50px;}
+.info ul{display: inline-block; height: 100%; padding: 0;}
+.info ul li{float: left; padding: 0 20px;}
+.info .left li{float: none;}
+.info .left li a{font-size: 15px; line-height: 12px;}
+.info .left li a:hover{color: #024886;}
+.info .right{padding-top: 15px;}
+.info .right img{width: 25px; height: 25px;}
+
+
+@media screen and (min-width: 750px){
+	.header-top form{grid-template-columns: 16em 1.7em;}
+	.header-top .top-icon{position: absolute; right: 0; grid-template-columns: 4.2em 4.2em;}
+	.header-top .top-icon li a i{font-size: 2.3em;}
+	.header-top nav .topMenu .item .tit{font-size: 1.5em;}
+	.header-top nav .topMenu .item li{font-size: 1.2em; line-height: 35px;}
+	main section article{width: 49%; display: inline-block;}
+	main section article dl{width: 95%;}
+	main section article .material-icons{font-size: 1.1em;}
+	.info .left li{float: left;}
+
+}
+
+
+@media screen and (min-width: 1200px){
+	.header-top .logo{width: 280px;}
+	.header-top nav .topMenu .item .tit{font-size: 1.8em;}
+	.header-top nav .topMenu .item ul li{font-size: 1.4em; line-height: 33px;}
+	main section article{width: 50%; float: left;}
+	main section article dl{width: 72%;}
+	.container form h2{display: inline-block;}
+	.container form fieldset{float: none;}
+	
+	
+}
+
+	
+
+	
+
+
+
+
+
