@@ -12,6 +12,7 @@ const product0 = {
     del: `1.99`
   };
 
+
   const product1 = {
     imgsrc :`img/can5.jpg`,
     name: `Simply Nourish® Pate Wet Adult Cat Food`,

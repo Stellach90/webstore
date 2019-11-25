@@ -25,11 +25,12 @@ pointcolor: #e03c32;
 .header-top nav .mymanu aside label i:nth-child(3) {top: 68%;}
 .header-top nav .mymanu aside a{color: #ffffff;}
 .header-top nav .mymanu aside a:hover{color: #024886;}
-.header-top nav .mymanu aside .mypage li{float: left; margin-top: 5px; margin-right: 8px;}
+.header-top nav .mymanu aside .mypage{padding: 10px 0 5px 10px;}
+.header-top nav .mymanu aside .mypage li{display: inline-block;}
 .header-top nav .mymanu aside .mypage i{margin-top: 6px;}
-.header-top nav .mymanu aside .mypagelist{padding-left: 40px;}
+.header-top nav .mymanu aside .mypagelist{padding: 10px 0 10px 40px;}
 .header-top nav .mymanu aside .mypagelist li+li{padding-top: 12px;}
-.header-top nav .mymanu aside .mypagelist .material-icons{float: left; display: block; line-height: 30px; color: #ffffff;}
+.header-top nav .mymanu aside .mypagelist .material-icons{float: left; display: block; line-height: 20px; color: #ffffff;}
 .header-top nav .mymanu aside .mypagelist li:hover .material-icons{color: #024886;}
 
 
