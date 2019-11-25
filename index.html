@@ -7,10 +7,11 @@
       <meta name="author" content="Sunhwa Cheon">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/reset.css">
-      <link href="https://fonts.googleapis.com/css?family=Cabin:500i|Shadows+Into+Light&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="css/index.css">
       <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,600,600i,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
     </head>
     <body>
       <!-- 
@@ -118,12 +119,11 @@
           <!-- Filtering product form -->
           <form>
            <fieldset>
-              <h3>Sort By</h3>
               <label for="sort">Show</label>
               <select name="sort" id="sort">
-                <option value="Can">Can</option>
-                <option value="Pouch">Pouch</option>
-                <option value="Plastic">Plastic container</option>
+                <option value="Best Sellers">Best Sellers</option>
+                <option value="New Arrivals">New Arrivals</option>
+                <option value="Top rated">Top rated</option>
               </select>
             </fieldset>
             <fieldset>
@@ -137,7 +137,7 @@
               </ul>
             </fieldset>
             
-            <fieldset class="rating">
+            <fieldset>
               <legend>Rating above</legend>
               <ol>
                 <li>
@@ -175,26 +175,29 @@
   
           <!-- Product 1 -->
           <article class="product">
-            <div class="productimg"><a><div class="sale" style="background-image: url(img/sale.png);"></div><img src="img/can1.jpg" alt="Product Image"></div></a></div>
+            <div class="productimg"><a>
+              <div class="sale" style="background-image: url(img/sale.png);"></div>
+              <img src="img/can1.jpg" alt="Product Image"></a></div>
+            
             
             <h3><a>Merrick® Chicken Bistro Pate</a></h3>
             <p>Merrick® Purrfect Bistro ™ Pate Wet Cat Food - Natural, Grain Free</p>
             <form>
               <fieldset>
-                <legend>Colours</legend>
+                <legend>Flavors</legend>
                 <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="r"> <span>Red</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="w"> <span>White</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="b"> <span>Blue</span></label></li>
                 </ul>
               </fieldset>
   
               <fieldset>
                 <legend>Sizes</legend>
                 <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
+                  <li><label><input type="radio" name="size" value="52g"> <span>M</span></label></li>
+                  <li><label><input type="radio" name="size" value="158g"> <span>L</span></label></li>
+                  <li><label><input type="radio" name="size" value="325g"> <span>XL</span></label></li>
                 </ol>
               </fieldset>
   
@@ -205,8 +208,7 @@
                 </dl>
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <button type="button"><span class="material-icons">favorite</span>Add to List</button>
               </footer>
             </form>
           </article>
@@ -218,11 +220,11 @@
             <p>Merrick® Purrfect Bistro ™ Grilled in Gravy Wet Cat Food - Natural, Grain Free</p>
             <form>
               <fieldset>
-                <legend>Colours</legend>
+                <legend>Flavors</legend>
                 <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="r"> <span>Red</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="w"> <span>White</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="b"> <span>Blue</span></label></li>
                 </ul>
               </fieldset>
   
@@ -242,8 +244,7 @@
                 </dl>
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <button type="button"><span class="material-icons">favorite</span>Add to List</button>
               </footer>
             </form>
           </article>
@@ -256,11 +257,11 @@
             <p>Merrick® Backcountry ™ Pate Adult Wet Cat Food - Natural, Grain Free</p>
             <form>
               <fieldset>
-                <legend>Colours</legend>
+                <legend>Flavors</legend>
                 <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="r"> <span>Red</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="w"> <span>White</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="b"> <span>Blue</span></label></li>
                 </ul>
               </fieldset>
   
@@ -280,25 +281,24 @@
                 </dl>
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <button type="button"><span class="material-icons">favorite</span>Add to List</button>
               </footer>
             </form>
           </article>
     
           <!-- Product 4 -->
           <article class="product">
-            <div class="productimg"><a><div class="sale" style="background-image: url(img/sale.png);"></div><img src="img/can4.jpg" alt="Product Image"></div></a></div>
+            <div class="productimg"><a><div class="sale" style="background-image: url(img/sale.png);"></div><img src="img/can4.jpg" alt="Product Image"></a></div>
             
             <h3><a>Merrick® Kitten Chicken Recipe</a></h3>
             <p>Merrick® Backcountry ™ Pate Kitten Wet Cat Food - Natural, Grain Free</p>
             <form>
               <fieldset>
-                <legend>Colours</legend>
+                <legend>Flavors</legend>
                 <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="r"> <span>Red</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="w"> <span>White</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="b"> <span>Blue</span></label></li>
                 </ul>
               </fieldset>
   
@@ -318,24 +318,24 @@
                 </dl>
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <button type="button"><span class="material-icons">favorite</span>Add to List</button>
               </footer>
             </form>
           </article>
   
           <!-- Product 5 -->
           <article class="product">
-            <div><a><img src="img/can5.jpg" alt="Product Image"></a></div>
+            <div><a>
+              <img src="img/can5.jpg" alt="Product Image"></a></div>
             <h3><a>Simply Nourish® Tuna & Chicken Stew</a></h3>
             <p>Simply Nourish® Flaked Stew Wet Cat Food - Natural, Grain Free</p>
             <form>
               <fieldset>
-                <legend>Colours</legend>
+                <legend>Flavors</legend>
                 <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="r"> <span>Red</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="w"> <span>White</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="b"> <span>Blue</span></label></li>
                 </ul>
               </fieldset>
   
@@ -355,25 +355,26 @@
                 </dl>
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <button type="button"><span class="material-icons">favorite</span>Add to List</button>
               </footer>
             </form>
           </article>
   
           <!-- Product 6 -->
           <article class="product">
-            <div class="productimg"><a><div class="sale" style="background-image: url(img/sale.png);"></div><img src="img/can6.jpg" alt="Product Image"></div></a></div>
+            <div class="productimg"><a>
+              <div class="sale" style="background-image: url(img/sale.png);"></div>
+              <img src="img/can6.jpg" alt="Product Image"></a></div>
             
             <h3><a>Simply Nourish® Kitten Chicken Stew</a></h3>
             <p>Simply Nourish® Shreds & Flake Stew Wet Cat Food - Natural, Grain Free</p>
             <form>
               <fieldset>
-                <legend>Colours</legend>
+                <legend>Flavors</legend>
                 <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="r"> <span>Red</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="w"> <span>White</span></label></li>
+                  <li><label><input type="radio" name="Flavor" value="b"> <span>Blue</span></label></li>
                 </ul>
               </fieldset>
   
@@ -393,8 +394,7 @@
                 </dl>
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <button type="button"><span class="material-icons">favorite</span>Add to List</button>
               </footer>
             </form>
           </article>
