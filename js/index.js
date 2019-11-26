@@ -9,7 +9,7 @@ const product0 = {
     size2: `129g`,
     size3: ``,
     priceSale: `1.99`,
-    priceRegular: `1.99`
+    priceRegular: `2.05`
   };
 
 
@@ -24,7 +24,7 @@ const product0 = {
     size2: `155g`,
     size3: `350g`,
     priceSale: `2.35`,
-    priceRegular: `1.99`
+    priceRegular: `2.55`
   };
 
   const product2 = {
@@ -37,8 +37,8 @@ const product0 = {
     size1: `60g`,
     size2: `85g`,
     size3: ``,
-    inpriceSales: `1.99`,
-    priceRegular: `1.99`
+    priceSales: `1.99`,
+    priceRegular: `2.19`
   };
 
   const product3 = {
@@ -80,7 +80,7 @@ const product0 = {
     size2: `79g`,
     size3: `150g`,
     priceSale: `1.99`,
-    priceRegular: `1.99`
+    priceRegular: `2.11`
   };
 
 
@@ -118,7 +118,9 @@ const product0 = {
           <dt>Rating</dt>
           <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
         </dl>
-        <data value="${product.priceSale}"><del>${product.priceRegular}</del> <ins><strong>${product.priceSale}</strong></ins></data>
+        <data value="${product.priceSale}">
+        <del>${product.priceRegular}</del> <ins><strong>${product.priceSale}</strong></ins>
+        </data>
         <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
         <button type="button"><span class="material-icons">favorite</span>Add to List</button>
       </footer>

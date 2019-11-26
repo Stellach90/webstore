@@ -86,7 +86,7 @@ main section article form fieldset ol{padding-left: 0;}
 main section article form footer dl{width: 100%; overflow: hidden; padding-top: 20px;}
 main section article form footer dl dd .material-icons{font-size: 1em;}
 main section article form footer data{display: block; padding-bottom: 15px;}
-main section article form footer data ins{text-decoration: none; padding-left: 15px; font-size: 1.4em; font-weight: bold;}
+main section article form footer data ins{text-decoration: none; padding-left: 15px; font-size: 1.4em; font-weight: bold; color: #e03c32;}
 main section article form footer button:hover{color: #024886;}
 main section article form footer button+button{margin-left: 40px;}
 main section article form footer button span{font-size: 1.4em;}
@@ -98,11 +98,9 @@ main section article div a{left: 120px; bottom: 32px; font-size: 0.9em;}
 main section article div a:hover {color: #024886;}
 main section article div span{font-size: 1.9em;}
 main section article div span del{font-size: 0.7em; color: #606060; padding-right: 10px;}
-main section article div span ins{text-decoration: none; color: #e03c32;}
+main section article div span ins{text-decoration: none; }
 main section article button{border: none;}
-main section article .price{position: static;}
-main section article .price button i{font-size: 19px; cursor: pointer;}
-main section article .price button:hover i{color: #e03c32;}
+
 
 main footer p{font-size: 1.2em;}
 main footer ol{display: inline-block; width: 160px; height: 50px; line-height: 50px; padding: 5px 15px; margin: 0;}
