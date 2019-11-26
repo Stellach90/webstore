@@ -5,11 +5,11 @@ const product0 = {
     flavor1: `Chicken`,
     flavor2: `Salmon`,
     flavor3: `Turkey`,
-    size1: `32g`,
-    size2: `79g`,
-    size3: `none`,
-    ins: `1.99`,
-    del: `1.99`
+    size1: `79g`,
+    size2: `129g`,
+    size3: ``,
+    priceSale: `1.99`,
+    priceRegular: `1.99`
   };
 
 
@@ -20,11 +20,11 @@ const product0 = {
     flavor1: `Salmon`,
     flavor2: `Shrimp`,
     flavor3: `Tuna & Shrimp`,
-    size1: `32g`,
-    size2: `79g`,
-    size3: `none`,
-    ins: `2.35`,
-    del: `1.99`
+    size1: `85g`,
+    size2: `155g`,
+    size3: `350g`,
+    priceSale: `2.35`,
+    priceRegular: `1.99`
   };
 
   const product2 = {
@@ -34,11 +34,11 @@ const product0 = {
     flavor1: `Beef`,
     flavor2: `Tuna & Chicken`,
     flavor3: `Duck`,
-    size1: `32g`,
-    size2: `79g`,
+    size1: `60g`,
+    size2: `85g`,
     size3: ``,
-    ins: `1.99`,
-    del: `1.99`
+    inpriceSales: `1.99`,
+    priceRegular: `1.99`
   };
 
   const product3 = {
@@ -48,11 +48,11 @@ const product0 = {
     flavor1: `Sensitive Digestion`,
     flavor2: `Beauty Chunk`,
     flavor3: `Nutrition Chunk`,
-    size1: `32g`,
-    size2: `79g`,
+    size1: `85g`,
+    size2: `120g`,
     size3: `none`,
-    ins: `1.89`,
-    del: `1.99`
+    priceSale: `1.89`,
+    priceRegular: `1.99`
   };
 
   const product4 = {
@@ -62,11 +62,11 @@ const product0 = {
     flavor1: `Mackerel`,
     flavor2: `Salmon`,
     flavor3: `Tuna`,
-    size1: `32g`,
-    size2: `79g`,
-    size3: `none`,
-    ins: `1.19`,
-    del: `1.99`
+    size1: `15.5g`,
+    size2: `35g`,
+    size3: `70g`,
+    priceSale: `1.19`,
+    priceRegular: `1.99`
   };
 
   const product5 = {
@@ -78,9 +78,9 @@ const product0 = {
     flavor3: `Chicken & Beef`,
     size1: `32g`,
     size2: `79g`,
-    size3: `none`,
-    ins: `1.99`,
-    del: `1.99`
+    size3: `150g`,
+    priceSale: `1.99`,
+    priceRegular: `1.99`
   };
 
 
@@ -96,7 +96,7 @@ const product0 = {
     <p>${product.discription}</p>
     <form>
       <fieldset>
-        <legend>Colours</legend>
+        <legend>Flavor</legend>
         <ul>
           <li><label><input type="radio" name="Flavor" value="${product.flavor1}"> <span>${product.flavor1}</span></label></li>
           <li><label><input type="radio" name="Flavor" value="${product.flavor2}"> <span>${product.flavor2}</span></label></li>
@@ -118,7 +118,7 @@ const product0 = {
           <dt>Rating</dt>
           <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
         </dl>
-        <data value="${product.ins}"><del>${product.del}</del> <ins><strong>${product.ins}</strong></ins></data>
+        <data value="${product.priceSale}"><del>${product.priceRegular}</del> <ins><strong>${product.priceSale}</strong></ins></data>
         <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
         <button type="button"><span class="material-icons">favorite</span>Add to List</button>
       </footer>
