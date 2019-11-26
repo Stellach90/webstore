@@ -36,8 +36,8 @@ const product0 = {
     flavor3: `Duck`,
     size1: `60g`,
     size2: `85g`,
-    size3: ``,
-    priceSales: `1.99`,
+    size3: `none`,
+    priceSale: `1.99`,
     priceRegular: `2.19`
   };
 
