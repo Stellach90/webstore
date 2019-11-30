@@ -70,9 +70,12 @@ pointcolor: #e03c32;
 .container form fieldset ol li i{position: relative; top: 7px; color: #f0b5b1;}
 
 main{margin: auto; padding: 40px 20px;}
+main section div{display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px; grid-row-gap: 15px;}
+main section .toggleView
 main section .sale{position: absolute; width: 60px; height: 60px; background-size: cover;}
 main section{width: 100%; text-align: center; overflow: hidden;padding-bottom: 60px;}
 main section h2{margin-bottom: 0; margin-top: 50px;}
+main section button{background-image: url();}
 main section article{padding-top: 40px;}
 main section article:nth-child(n+3){padding-top: 120px;}
 main section article .productimg{display: inline-block;}
@@ -121,7 +124,7 @@ main footer img{width: 60%; padding-top: 50px;}
 .info .right img{width: 25px; height: 25px;}
 
 
-@media screen and (min-width: 750px){
+/*@media screen and (min-width: 750px){
 	.header-top form{grid-template-columns: 16em 1.7em;}
 	.header-top .top-icon{position: absolute; right: 0; grid-template-columns: 4.2em 4.2em;}
 	.header-top .top-icon li a i{font-size: 2.3em;}
@@ -144,7 +147,27 @@ main footer img{width: 60%; padding-top: 50px;}
 	
 	
 }
+*/
 
+
+@media screen and (min-width: 50em) {
+	.toggleView {
+	  display: inline-block;
+	}
+	.grid-view {
+	  grid-template-columns: 1fr 1fr 1fr;
+	}
+	.grid-view .course-weeks {
+	  display: none;
+	}
+  }
+  
+  @media screen and (min-width: 70em) {
+  
+	.grid-view {
+	  grid-template-columns: 1fr;
+	}
+  }
 	
 
 	
