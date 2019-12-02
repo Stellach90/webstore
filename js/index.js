@@ -295,3 +295,6 @@ function toggleCourseLayout() {
 renderProducts(products);
 document.getElementById('toggleView').addEventListener('click', toggleCourseLayout);
 
+
+
+

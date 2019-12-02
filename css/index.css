@@ -9,7 +9,7 @@ pointcolor: #e03c32;
 
 
 .header-top{padding: 0px 26px;}
-.header-top .topbar{display: grid; grid-template-columns: auto 17px; padding: 10px 19px;}
+.header-top .topbar{display: grid; grid-template-columns: auto 90px; justify-items: end; grid-column-gap: 10px; padding: 10px 19px;}
 .header-top .logo{width: 230px; margin-left: auto; margin-right: auto;}
 .header-top .logoimg{width: 300px; padding: 40px 0;}
 
@@ -44,13 +44,13 @@ pointcolor: #e03c32;
 .header-top nav .cnt {height: 200px; clear: both;}
 
 
-.header-top form{display: grid; position: absolute; grid-template-columns: 9em 1.7em; padding-left: 10px; right: 135px;}
+.header-top form{display: grid; grid-template-columns: 15em 2em;}
 .header-top form .searchbar{border-style: none;}
 .header-top form .searchbtn{border-style: none; font-size: 0.7em; cursor: pointer;}
 .header-top form .searchbar input{width: 100%; height: 35px;}
 .header-top form .searchbtn i{font-size: 3em;}
 
-.header-top .top-icon{ display: grid; grid-template-columns: 2.2em 2.2em; padding: 0; font-size: 0.7em;}
+.header-top .top-icon{display: grid; grid-template-columns: 4em 3em; padding: 0; font-size: 0.7em;}
 
 .header-top .top-icon li:hover a {color: #024886;}
 .header-top .top-icon li a span{font-size: 2.8em; line-height: 1.1em;}
@@ -70,7 +70,7 @@ pointcolor: #e03c32;
 .container form fieldset ol li i{position: relative; top: 7px; color: #f0b5b1;}
 
 main{margin: auto; padding: 40px 20px;}
-main section div{display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px; grid-row-gap: 15px;}
+main section div{display: grid; grid-template-columns: auto auto; grid-column-gap: 10px; grid-row-gap: 15px;}
 main section .toggleView
 main section .sale{position: absolute; width: 60px; height: 60px; background-size: cover;}
 main section{width: 100%; text-align: center; overflow: hidden;padding-bottom: 60px;}
