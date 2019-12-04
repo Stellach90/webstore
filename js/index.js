@@ -262,7 +262,7 @@
   </article>`;
   }
 
-document.getElementById('products').innerHTML = getProductAsHtmlString(products[0])
+/*document.getElementById('products').innerHTML = getProductAsHtmlString(products[0])
 document.getElementById('products').innerHTML += getProductAsHtmlString(products[1])
 document.getElementById('products').innerHTML += getProductAsHtmlString(products[2])
 document.getElementById('products').innerHTML += getProductAsHtmlString(products[3])
@@ -271,13 +271,13 @@ document.getElementById('products').innerHTML += getProductAsHtmlString(products
 document.getElementById('products').innerHTML += getProductAsHtmlString(products[6])
 document.getElementById('products').innerHTML += getProductAsHtmlString(products[7])
 document.getElementById('products').innerHTML += getProductAsHtmlString(products[8])
-document.getElementById('products').innerHTML += getProductAsHtmlString(products[9])
+document.getElementById('products').innerHTML += getProductAsHtmlString(products[9])*/
 
 
 function renderProducts(arrToRender) {
   const arrOfHtmlproducts = arrToRender.map(getProductAsHtmlString);
-  const strOfHtmlproducts = arrOfHtmlproducts;
-  document.getElementById('products').innerHTML = strOfHtmlproducts;  
+  const strOfHtmlproducts = arrOfHtmlproducts.join('\n');
+  document.getElementById('products').innerHTML = strOfHtmlproducts;
 }
 
 /*document.getElementById('products').innerHTML = getProductAsHtmlString(product[0])
@@ -294,7 +294,5 @@ function toggleCourseLayout() {
 
 renderProducts(products);
 document.getElementById('toggleView').addEventListener('click', toggleCourseLayout);
-
-
 
 

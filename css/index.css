@@ -77,6 +77,8 @@ main section{width: 100%; text-align: center; overflow: hidden;padding-bottom: 6
 main section h2{margin-bottom: 0; margin-top: 50px;}
 main section button{background-image: url();}
 main section article{padding-top: 40px;}
+main section article+article{}
+
 main section article:nth-child(n+3){padding-top: 120px;}
 main section article .productimg{display: inline-block;}
 main section article img{cursor: pointer;}
@@ -101,7 +103,7 @@ main section article div a{left: 120px; bottom: 32px; font-size: 0.9em;}
 main section article div a:hover {color: #024886;}
 main section article div span{font-size: 1.9em;}
 main section article div span del{font-size: 0.7em; color: #606060; padding-right: 10px;}
-main section article div span ins{text-decoration: none; }
+main section article div span ins{text-decoration: none;}
 main section article button{border: none;}
 
 
@@ -163,8 +165,7 @@ main footer img{width: 60%; padding-top: 50px;}
   }
   
   @media screen and (min-width: 70em) {
-  
-	.grid-view {
+  	.grid-view {
 	  grid-template-columns: 1fr;
 	}
   }
