@@ -9,13 +9,13 @@ pointcolor: #e03c32;
 
 
 .header-top{padding: 0px 26px;}
-.header-top .topbar{display: grid; grid-template-columns: auto 90px; justify-items: end; grid-column-gap: 10px; padding: 10px 19px;}
+.header-top .topbar{display: grid; position: fixed; right: 0;  grid-template-columns: auto 90px; justify-items: end; grid-column-gap: 10px; width: 100%; padding: 10px 19px; background-color: #fff; z-index: 1; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);}
 .header-top .logo{width: 230px; margin-left: auto; margin-right: auto;}
-.header-top .logoimg{width: 300px; padding: 40px 0;}
+.header-top .logoimg{width: 300px; margin: 70px 0;}
 
 .header-top nav{height: 190px;}
 .header-top nav .mymanu input{display: none;}
-.header-top nav .mymanu aside {position: fixed; top: 0; left: -200px; width: 200px; background-color: #f0b5b1; transition: left 0.4s;}
+.header-top nav .mymanu aside {position: fixed; top: 0; left: -200px; width: 200px; background-color: #f0b5b1; transition: left 0.4s; z-index: 2;}
 .header-top nav .mymanu :checked~aside {left: 0;}
 .header-top nav .mymanu :checked~main{padding-left: 200px;}
 .header-top nav .mymanu aside label{position: absolute; top: 10px; right: -40px; width: 33px; height: 33px; background-color: #f0b5b1; cursor: pointer;}
@@ -71,11 +71,10 @@ pointcolor: #e03c32;
 
 main{margin: auto; padding: 40px 20px;}
 main section div{display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px; grid-row-gap: 15px;}
-main section .toggleView
 main section .sale{position: absolute; width: 60px; height: 60px; background-size: cover;}
 main section{width: 100%; text-align: center; overflow: hidden;padding-bottom: 60px;}
 main section h2{margin-bottom: 0; margin-top: 50px;}
-main section .toggleView{position: relative; left: -45%; background-image: url(); padding: 10px 12px;}
+main section .toggleView{position: relative; left: -40%; background-image: url(); padding: 10px 12px; z-index: 0;}
 main section button:hover{background-color: #f0b5b1;}
 main section article{padding-top: 40px;}
 
