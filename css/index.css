@@ -57,8 +57,8 @@ pointcolor: #e03c32;
 
 .container{overflow: hidden;}
 .container h1{border-bottom: 8px dotted #f0b5b1;}
-.container h2{float: right;}
-.container form{float: right; padding-top: 40px;}
+.container h2{text-align: right; padding: 15px 30px;} 
+.container form{float: right;}
 .container form fieldset{border-style: none; display: inline-block;}
 .container form fieldset h3{padding: 10px 15px;}
 .container form fieldset+fieldset{padding-left: 35px;}
@@ -70,14 +70,14 @@ pointcolor: #e03c32;
 .container form fieldset ol li i{position: relative; top: 7px; color: #f0b5b1;}
 
 main{margin: auto; padding: 40px 20px;}
-main section div{display: grid; grid-template-columns: auto auto; grid-column-gap: 10px; grid-row-gap: 15px;}
+main section div{display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px; grid-row-gap: 15px;}
 main section .toggleView
 main section .sale{position: absolute; width: 60px; height: 60px; background-size: cover;}
 main section{width: 100%; text-align: center; overflow: hidden;padding-bottom: 60px;}
 main section h2{margin-bottom: 0; margin-top: 50px;}
-main section button{background-image: url();}
+main section .toggleView{position: relative; left: -45%; background-image: url(); padding: 10px 12px;}
+main section button:hover{background-color: #f0b5b1;}
 main section article{padding-top: 40px;}
-main section article+article{}
 
 main section article:nth-child(n+3){padding-top: 120px;}
 main section article .productimg{display: inline-block;}
