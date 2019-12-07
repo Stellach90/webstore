@@ -31,8 +31,8 @@
       <div class="topbar">
         <form>
           <fieldset class="searchbar">
-            
-            <input type="text" name="find" id="find" placeholder="Search anything!">
+            <label for="search"></label>
+            <input type="text" name="search" id="search" placeholder="Search anything!" oninput="loadProductByName(event)">
           </fieldset>
           <button type="button" class="searchbtn"><i class="material-icons">search</i></button>
         </form>

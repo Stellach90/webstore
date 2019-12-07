@@ -49,15 +49,7 @@ legend{font-size: 1.2em;}
   ins::before {content: "$";}
  
 
-  .num {
-    background-color: gold;
-    padding: 0.125em;
-    border-radius: 0.5em;
-    display: inline-block;
-    position: absolute;
-    bottom: -0.25em;
-    left: -0.25em;
-  }
+  .num {position: fixed; float: right; top: 5px; right: 20px; background-color: #024886; color: #ffffff; font-size: 1.7em; padding: 2.5px; border-radius: 1em;}
 
 
 

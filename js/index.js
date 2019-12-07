@@ -16,6 +16,7 @@
     size3: `150g`,
     priceSale: 1.99,
     priceRegular: `2.11`,
+    qty:785,
     category: `plastic container`
   },
   {
@@ -30,6 +31,7 @@
     size3: `70g`,
     priceSale: 1.19,
     priceRegular: `1.99`,
+    qty:245,
     category: `plastic container`
   },
   {
@@ -44,6 +46,7 @@
     size3: `none`,
     priceSale: 1.89,
     priceRegular: `1.99`,
+    qty:115,
     category: `pouch`
   },
   {
@@ -58,6 +61,7 @@
     size3: `none`,
     priceSale: 1.99,
     priceRegular: `2.19`,
+    qty:635,
     category: `pouch`
   },
   {
@@ -72,6 +76,7 @@
     size3: `350g`,
     priceSale: 2.35,
     priceRegular: `2.55`,
+    qty:635,
     category: `can`
   },
   {
@@ -86,6 +91,7 @@
     size3: ``,
     priceSale: 1.99,
     priceRegular: `2.05`,
+    qty:735,
     category: `plastic container`
   },
   {
@@ -100,6 +106,7 @@
     size3: ``,
     priceSale: 5.49,
     priceRegular: `5.99`,
+    qty:35,
     category: `plastic container`
   },
   {
@@ -114,6 +121,7 @@
     size3: `350g`,
     priceSale: 1.04,
     priceRegular: `1.24`,
+    qty:455,
     category: `plastic container`
   },
   {
@@ -128,6 +136,7 @@
     size3: `350g`,
     priceSale: 1.59,
     priceRegular: `2.55`,
+    qty:965,
     category: `can`
   },
   {
@@ -142,6 +151,7 @@
     size3: `350g`,
     priceSale: 3.39,
     priceRegular: `3.39`,
+    qty:25,
     category: `can`
   },
   {
@@ -156,6 +166,7 @@
     size3: `220g`,
     priceSale: 1.79,
     priceRegular: `1.89`,
+    qty:735,
     category: `pouch`
   },
   {
@@ -170,6 +181,7 @@
     size3: `9 Count`,
     priceSale: 6.39,
     priceRegular: `7.99`,
+    qty:955,
     category: `can`
   },
   {
@@ -184,6 +196,7 @@
     size3: `155g`,
     priceSale: 1.99,
     priceRegular: `2.29`,
+    qty:575,
     category: `can`
   },
   {
@@ -198,6 +211,7 @@
     size3: `195g`,
     priceSale: 1.69,
     priceRegular: `1.99`,
+    qty:45,
     category: `plastic container`
   },
   {
@@ -212,6 +226,7 @@
     size3: `195g`,
     priceSale: 0.89,
     priceRegular: `0.99`,
+    qty:735,
     category: `can`
   },
   {
@@ -226,6 +241,7 @@
     size3: `195g`,
     priceSale: 0.89,
     priceRegular: `1.99`,
+    qty:985,
     category: `pouch`
   },
   {
@@ -240,6 +256,7 @@
     size3: `195g`,
     priceSale: 2.59,
     priceRegular: `2.89`,
+    qty:65,
     category: `can`
   },
   {
@@ -254,6 +271,7 @@
     size3: `295g`,
     priceSale: 2.05,
     priceRegular: `2.09`,
+    qty:465,
     category: `can`
   },
   {
@@ -268,6 +286,7 @@
     size3: `207g`,
     priceSale: 1.59,
     priceRegular: `1.99`,
+    qty:345,
     category: `plastic container`
   },
   {
@@ -282,6 +301,7 @@
     size3: `309g`,
     priceSale: 3.29,
     priceRegular: `3.49`,
+    qty:5,
     category: `plastic container`
   }
 
@@ -299,20 +319,37 @@
     }
   }
 
+  function isMatchingName(prod) {
+    if (prod.name.toUpperCase().includes(this.trim().toUpperCase())) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 
   function getProductAsHtmlString(product) {
 
   let greatdeal;
   if (product.priceSale < 1.50) {
     greatdeal = `<small class="callout urgent">Super deal!</small>`;
+  } else {
+    greatdeal = `\n`
+  }
+
+  let lowstock;
+  if (product.qty < 100) {
+    lowstock = `<small class="callout urgent2">Low Stock!</small>`;
+  } else {
+    lowstock = `\n`
   }
 
     return `<article class="product">
     <div class="productimg"><a>
-      <img src="${product.imgsrc}" alt="Product Image"></a></div>
+      <img src="${product.imgsrc}" alt="Product Image"></a>${greatdeal} ${lowstock}</div>
     
     
-    <h3><a>${product.name} ${greatdeal}</a></h3>
+    <h3><a>${product.name} </a></h3>
     <p>${product.discription}</p>
     <form>
       <fieldset>
@@ -341,7 +378,7 @@
         <data value="${product.priceSale}">
         <del>${product.priceRegular}</del> <ins><strong>${product.priceSale}</strong></ins>
         </data>
-        <button type="button" id="addOne"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+        <button type="button" onclick = "addOneToCart()" id="addOne"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
         <button type="button"><span class="material-icons">favorite</span>Add to List</button>
       </footer>
     </form>
@@ -354,6 +391,7 @@
 function renderProducts(arrToRender) {
   const arrOfHtmlproducts = arrToRender.map(getProductAsHtmlString);
   const strOfHtmlproducts = arrOfHtmlproducts.join('\n');
+
   document.getElementById('products').innerHTML = strOfHtmlproducts;
 }
 
@@ -368,10 +406,16 @@ function loadProductCategory(event) {
   renderProducts(products.filter(isInThisCategory, categoryImSearchingFor)); 
 }
 
+function loadProductByName(event) {
+  const nameImSearchingFor = event.target.value;
+  renderProducts(products.filter(isMatchingName, nameImSearchingFor));
+}
+
 
 renderProducts(products);
 document.getElementById('toggleView').addEventListener('click', toggleProductLayout);
 document.getElementById('courseCategory').addEventListener('change', loadProductCategory);
+document.getElementById('search').addEventListener('input', loadProductByName);
 
 
 let numItemsInCart = 0;

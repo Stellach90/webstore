@@ -91,6 +91,7 @@ main section article form footer dl{width: 100%; overflow: hidden; padding-top: 
 main section article form footer dl dd .material-icons{font-size: 1em;}
 main section article form footer data{display: block; padding-bottom: 15px;}
 main section article form footer data ins{text-decoration: none; padding-left: 15px; font-size: 1.4em; font-weight: bold; color: #e03c32;}
+main section article form footer button{background-color: #ffffff;}
 main section article form footer button:hover{color: #024886;}
 main section article form footer button+button{margin-left: 40px;}
 main section article form footer button span{font-size: 1.4em;}
@@ -112,7 +113,7 @@ main footer ol li{display: inline-block;}
 main footer ol li+li{padding-left: 10px;}
 main footer ol li a{display: inline-block;}
 main footer ol li:hover a{color: #024886; text-decoration: underline; font-size: 1.4em;}
-main footer img{width: 60%; padding-top: 50px;}
+
 
 /*footer*/
 .info{padding: 50px;}
