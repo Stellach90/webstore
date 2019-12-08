@@ -18,6 +18,7 @@ h5{font-size: 0.8em;}
 legend{font-size: 1.2em;}
 .center{text-align: center;}
 [type=button],button,a,label {cursor: pointer;}
+button{background-color: #ffffff;}
 
 /*footer*/
 .info{position: relative; margin: auto; padding: 50px;}
