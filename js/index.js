@@ -426,3 +426,4 @@ function addOneToCart() {
 }
 
 document.getElementById(`addOne`).addEventListener('click', addOneToCart);
+
