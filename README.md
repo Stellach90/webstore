@@ -1,4 +1,4 @@
-**Interface Development 1, Final Project**
+
 # Web Store: Layout & Filter Content
 
 ---
