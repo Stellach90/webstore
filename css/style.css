@@ -6,7 +6,7 @@ grey: #606060;
 pointcolor: #e03c32;
 */
 
-*{font-family: 'Ibarra Real Nova', serif;}
+*{font-family: 'Comic Neue', cursive;}
 ul, ol, li {list-style: none;}
 dd{margin: 0;}
 a{text-decoration: none; color: #000000; cursor: pointer;}

@@ -10,7 +10,7 @@ pointcolor: #e03c32;
 
 .header-top{padding: 0px 26px;}
 .header-top .topbar{display: grid; position: fixed; right: 0;  grid-template-columns: auto 90px; justify-items: end; grid-column-gap: 10px; width: 100%; padding: 10px 19px; background-color: #fff; z-index: 1; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);}
-.header-top .logo{width: 230px; margin-left: auto; margin-right: auto;}
+.header-top .logo{width: 25%; margin-left: auto; margin-right: auto;}
 .header-top .logoimg{width: 300px; margin: 70px 0;}
 
 .header-top nav{height: 190px;}
@@ -18,11 +18,11 @@ pointcolor: #e03c32;
 .header-top nav .mymanu aside {position: fixed; top: 0; left: -200px; width: 200px; background-color: #f0b5b1; transition: left 0.4s; z-index: 2;}
 .header-top nav .mymanu :checked~aside {left: 0;}
 .header-top nav .mymanu :checked~main{padding-left: 200px;}
-.header-top nav .mymanu aside label{position: absolute; top: 10px; right: -40px; width: 33px; height: 33px; background-color: #f0b5b1; cursor: pointer;}
-.header-top nav .mymanu aside label i{color: #ffffff; position: absolute; left: 51%; margin: 2px 0 0 -12px; width: 23px; height: 2px; background-color: #ffffff;}
-.header-top nav .mymanu aside label i:nth-child(1) {top: 21%;}
-.header-top nav .mymanu aside label i:nth-child(2) {top: 44%;}
-.header-top nav .mymanu aside label i:nth-child(3) {top: 68%;}
+.header-top nav .mymanu aside label{position: absolute; top: 10px; right: -40px; width: 33px; height: 33px; cursor: pointer;}
+.header-top nav .mymanu aside label i{background-color: #f0b5b1; position: absolute; left: 51%; width: 1.7em; height: 2px;}
+.header-top nav .mymanu aside label i:nth-child(1) {top: 30%;}
+.header-top nav .mymanu aside label i:nth-child(2) {top: 60%;}
+.header-top nav .mymanu aside label i:nth-child(3) {top: 90%;}
 .header-top nav .mymanu aside a{color: #ffffff;}
 .header-top nav .mymanu aside a:hover{color: #024886;}
 .header-top nav .mymanu aside .mypage{padding: 10px 0 5px 10px;}
@@ -34,9 +34,9 @@ pointcolor: #e03c32;
 .header-top nav .mymanu aside .mypagelist li:hover .material-icons{color: #024886;}
 
 
-
-.header-top nav .topMenu .item {float: left; width: 25%;}
-.header-top nav .topMenu .item .tit {text-align: center; font-size: 2em; line-height: 40px; cursor: pointer;}
+.header-top nav .topMenu{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;}
+.header-top nav .topMenu .item {justify-self: center;}
+.header-top nav .topMenu .item .tit {text-align: center; font-size: 1.8em; line-height: 2em; cursor: pointer;}
 .header-top nav .topMenu .item ul {overflow: hidden; height: 0; background-color: #fff; transition: height 0.3s; padding: 0;}
 .header-top nav .topMenu .item:hover ul {height: 170px; padding-top: 10px;}
 .header-top nav .topMenu .item ul li {font-size: 1.2em; line-height: 40px; color: #606060; text-align: center; cursor: pointer;}
@@ -44,14 +44,14 @@ pointcolor: #e03c32;
 .header-top nav .cnt {height: 200px; clear: both;}
 
 
-.header-top form{display: grid; grid-template-columns: 15em 2em;}
+.header-top form{display: grid; grid-template-columns: 15em 2em; border: 1px solid #f0b5b1; padding: 2px;}
 .header-top form .searchbar{border-style: none;}
 .header-top form .searchbtn{border-style: none; font-size: 0.7em; cursor: pointer; background-color: #ffffff;}
-.header-top form .searchbar input{width: 100%; height: 35px; border: 1px solid #f0b5b1; padding: 10px;}
+.header-top form .searchbar input{width: 100%; height: 2em; border: none;}
 .header-top form .searchbtn i{font-size: 3em;}
 
 .header-top .top-icon{display: grid; grid-template-columns: 4em 3em; padding: 0; font-size: 0.7em;}
-
+.header-top .top-icon li{align-self: center;}
 .header-top .top-icon li:hover a {color: #024886;}
 .header-top .top-icon li a span{font-size: 2.8em; line-height: 1.1em;}
 
