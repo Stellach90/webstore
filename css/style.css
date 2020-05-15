@@ -1,6 +1,6 @@
 /*color theme:
 backtype: #ffffff;
-maincolor: #024886;
+maincolor: #0068b3;
 babypink: #f0b5b1;
 grey: #606060;
 pointcolor: #e03c32;
@@ -11,7 +11,7 @@ ul, ol, li {list-style: none;}
 dd{margin: 0;}
 a{text-decoration: none; color: #000000; cursor: pointer;}
 h1{font-size: 2.2em;}
-h2{font-size: 1.8em;}
+h2{font-size: 1.2em;}
 h3{font-size: 1em;}
 h4,p{font-size: 1em;}
 h5{font-size: 0.8em;}
@@ -20,27 +20,9 @@ legend{font-size: 1.2em;}
 [type=button],button,a,label {cursor: pointer;}
 button{background-color: #ffffff;}
 
-/*footer*/
-.info{position: relative; margin: auto; padding: 50px;}
-.info p{text-align: right; padding-bottom: 20px;}
-.info ul li{padding: 0 20px;}
-.info .left li a{font-size: 15px; line-height: 12px;}
-.info .left li a:hover{color: #024886;}
-.info .right img{width: 25px; height: 25px;}
-
-
-.callout { display: inline-block; padding: 1em; border-radius: 100%; background-color: #606060; color: #ffffff; font-size: 0.5em; box-shadow: 0 0 0.4em rgba(0,0,0,0.4);}
-.urgent {position: absolute; background-color: #e03c32;}
-.urgent2 {position: absolute; background-color: #024886;}
 
 
 
-
-  del::before {content: "$";}
-  ins::before {content: "$";}
- 
-
-  .num {position: fixed; float: right; top: 5px; right: 20px; background-color: #024886; color: #ffffff; font-size: 1.7em; padding: 2.5px; border-radius: 1em;}
 
 
 

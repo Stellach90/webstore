@@ -1,18 +1,13 @@
-/*color theme:
-backtype: #ffffff;
-maincolor: #024886;
-babypink: #f0b5b1;
-grey: #606060;
-pointcolor: #e03c32;
-*/
 
 
 
-.header-top{padding: 0px 26px;}
-.header-top .topbar{display: grid; position: fixed; right: 0;  grid-template-columns: auto 8em; justify-items: end; grid-column-gap: 10px; width: 100%; padding: 0.8em 1.3em; background-color: #fff; z-index: 1; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);}
-.header-top .logo{width: 25%; margin-left: auto; margin-right: auto;}
-.header-top .logoimg{margin: 7em 0;}
 
+.header-top {padding-top: 3em;}
+.header-top .topbar{display: grid; grid-template-columns: 1fr 2fr; grid-column-gap: 10px; width: 100%; padding: 1.5em 1.3em; background-color: #fff; z-index: 1;}
+.header-top .logo{width: 70%;}
+
+/* For mobile */
+.header-top nav .mymanu{display: none;}
 .header-top nav .mymanu input{display: none;}
 .header-top nav .mymanu aside {position: fixed; top: 0; left: -200px; width: 200px; background-color: #f0b5b1; transition: left 0.4s; z-index: 2;}
 .header-top nav .mymanu :checked~aside {left: 0;}
@@ -23,156 +18,48 @@ pointcolor: #e03c32;
 .header-top nav .mymanu aside label i:nth-child(2) {top: 60%;}
 .header-top nav .mymanu aside label i:nth-child(3) {top: 90%;}
 .header-top nav .mymanu aside a{color: #ffffff;}
-.header-top nav .mymanu aside a:hover{color: #024886;}
+.header-top nav .mymanu aside a:hover{color: #0068b3;}
 .header-top nav .mymanu aside .mypage{padding: 10px 0 5px 10px;}
 .header-top nav .mymanu aside .mypage li{display: inline-block;}
 .header-top nav .mymanu aside .mypage i{margin-top: 6px;}
 .header-top nav .mymanu aside .mypagelist{padding: 10px 0 10px 40px;}
 .header-top nav .mymanu aside .mypagelist li+li{padding-top: 12px;}
 .header-top nav .mymanu aside .mypagelist .material-icons{float: left; display: block; line-height: 20px; color: #ffffff;}
-.header-top nav .mymanu aside .mypagelist li:hover .material-icons{color: #024886;}
+.header-top nav .mymanu aside .mypagelist li:hover .material-icons{color: #0068b3;}
 
-
-.header-top nav .topMenu{display: flex;}
+/* Menu */
+.header-top nav .topMenu{display: flex; border-bottom: 2px solid #0068b3;}
 .header-top nav .topMenu .item {position: relative; width: 100%; justify-self: center;}
 .header-top nav .topMenu .item .tit {text-align: center; font-size: 1.8em; line-height: 2em; cursor: pointer;}
 .header-top nav .topMenu .item ul {position: absolute; width: 100%; overflow: hidden; height: 0; background-color: #fff; transition: height 0.3s; padding: 0;}
 .header-top nav .topMenu .item:hover ul {height: 170px; padding-top: 10px; background-color: #e0e0e0;}
-.header-top nav .topMenu .item:hover .tit{background-color: #024886; color: white;}
-.header-top nav .topMenu .item ul li {font-size: 1.2em; line-height: 40px; text-align: center; cursor: pointer;}
-.header-top nav .topMenu .item ul li:hover {color: #024886; font-weight: 700;}
+.header-top nav .topMenu .item:hover .tit{background-color: #0068b3; color: white;}
+.header-top nav .topMenu .item ul li {font-size: 1.2em; line-height: 40px; text-align: center;}
+.header-top nav .topMenu .item ul li:hover {color: #0068b3; font-weight: 700;}
 .header-top nav .cnt {height: 200px; clear: both;}
 
+.header-top .user{display: grid; grid-template-columns: 2fr 1fr; align-items: center; justify-items: stretch;}
+.header-top .user form{width: 100%; height: 50%; display: grid; grid-template-columns: auto 2em; border: 1px solid #f0b5b1; border-radius: 0.5em; padding: 2px;}
+.header-top .user form .searchbar{border-style: none;}
+.header-top .user form .searchbtn{border-style: none; font-size: 0.7em; cursor: pointer; background-color: #ffffff;}
+.header-top .user form .searchbar input{width: 100%; height: 2em; border: none;}
+.header-top .user form .searchbtn i{font-size: 3em;}
 
-.header-top form{display: grid; grid-template-columns: 15em 2em; border: 1px solid #f0b5b1; padding: 2px;}
-.header-top form .searchbar{border-style: none;}
-.header-top form .searchbtn{border-style: none; font-size: 0.7em; cursor: pointer; background-color: #ffffff;}
-.header-top form .searchbar input{width: 100%; height: 2em; border: none;}
-.header-top form .searchbtn i{font-size: 3em;}
-
-.header-top .top-icon{display: grid; grid-template-columns: 4em 3em; padding: 0; font-size: 0.7em;}
-.header-top .top-icon li{align-self: center;}
-.header-top .top-icon li:hover a {color: #024886;}
+.header-top .top-icon{display: grid; grid-template-columns: 3fr 1fr 1fr; justify-items: end; padding: 0; height: 50%; font-size: 0.7em;}
+.header-top .top-icon img{width: 30%;}
+.header-top .top-icon li{align-items: end; justify-items: stretch; text-align: end;}
+.header-top .top-icon li:first-child{font-size: 1.5em; font-weight: bold;}
+.header-top .top-icon li:hover a {color: #0068b3;}
 .header-top .top-icon li a span{font-size: 2.8em; line-height: 1.1em;}
-
-.container{overflow: hidden;}
-.container h1{border-bottom: 8px dotted #f0b5b1; padding-bottom: 0.5em;}
-.container h2{text-align: right; padding: 15px 30px;} 
-.container form{display: grid; grid-template-columns: 1fr 1fr 1fr; float: right;}
-.container form fieldset{border-style: none; display: inline-block;}
-.container form fieldset h3{padding: 10px 15px;}
-.container form fieldset+fieldset{padding-left: 35px;}
-/* .container form fieldset:nth-child(1){position: relative; bottom: 125px;} */
-.container form fieldset legend{padding-bottom: 10px;}
-.container form fieldset ul,ol{padding-left: 10px;}
-.container form fieldset ul li+li{padding-top: 4px;}
-.container form fieldset ol li{display: block;}
-.container form fieldset ol li i{position: relative; top: 7px; color: #f0b5b1;}
-
-main{margin: auto; width: 85%; padding: 4em 1.8em;}
-main section div{display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px; grid-row-gap: 15px;}
-main section .sale{position: absolute; width: 60px; height: 60px; background-size: cover;}
-main section{width: 100%; text-align: center; overflow: hidden;padding-bottom: 60px;}
-main section h2{margin-bottom: 0; margin-top: 50px;}
-main section .toggleView{position: relative; left: -40%; background-image: url(); padding: 10px 12px; z-index: 0;}
-main section button:hover{background-color: #f0b5b1;}
-main section article{padding-top: 40px;}
-
-main section article:nth-child(n+3){padding-top: 120px;}
-main section article .productimg{position: relative; display: inline-block;}
-main section article img{cursor: pointer;}
-main section article h3{width: 85%; margin: auto;}
-main section article h3 a{font-size: 1.5em;}
-main section article p{padding: 1em 1.8em; font-size: 1em; width: 80%; margin: auto; margin-bottom: 0;}
-
-main section article form{width: 75%; margin: auto;}
-main section article form fieldset{float: left; width: 50%;}
-main section article form fieldset ul{padding-top: 1.2em;}
-main section article form fieldset ul li+li{padding-top: 0.7em;}
-main section article form footer dl{width: 100%; overflow: hidden; padding-top: 20px;}
-main section article form footer dl dd .material-icons{font-size: 1em;}
-main section article form footer data{display: block; padding-bottom: 15px;}
-main section article form footer data ins{text-decoration: none; padding-left: 15px; font-size: 1.4em; font-weight: bold; color: #e03c32;}
-main section article form footer button:hover{color: #024886; background-color: unset;}
-main section article form footer button+button{margin-left: 40px;}
-main section article form footer button span{font-size: 1.4em;}
-
-
-
-
-main section article div a{left: 120px; bottom: 32px; font-size: 0.9em;}
-main section article div a:hover {color: #024886;}
-main section article div span{font-size: 1.9em;}
-main section article div span del{font-size: 0.7em; color: #606060; padding-right: 10px;}
-main section article div span ins{text-decoration: none;}
-main section article button{border: none;}
-
-
-main footer p{font-size: 1.2em;}
-main footer ol{display: inline-block; width: 160px; height: 50px; line-height: 50px; padding: 5px 15px; margin: 0;}
-main footer ol li{display: inline-block;}
-main footer ol li+li{padding-left: 10px;}
-main footer ol li a{display: inline-block;}
-main footer ol li:hover a{color: #024886; text-decoration: underline; font-size: 1.4em;}
-
-.grid-view{grid-template-columns: 1fr 1fr 1fr 1fr;}
 
 
 /*footer*/
-.info{padding: 50px;}
-.info nav{float: right;}
-.info ul{display: inline-block; padding: 0;}
-.info ul li{float: left; padding: 0 20px;}
+.info{padding: 50px; display: grid; grid-template-columns: 1fr 1fr 1fr; justify-items: center;}
+.info nav{place-self: center stretch;}
+.info p, ul{place-self: center stretch;}
+.info ul{display: grid; grid-template-columns: 1fr 1fr 1fr; justify-items: center;}
 .info .left li{float: none;}
 .info .left li a{font-size: 15px; line-height: 12px;}
-.info .left li a:hover{color: #024886;}
+.info .left li a:hover{color: #0068b3;}
+.info .right{justify-items: end;}
 .info .right img{width: 25px; height: 25px;}
-
-
-@media screen and (min-width: 768px){
-	.header-top .top-icon li a i{font-size: 2.3em;}
-	.header-top nav .topMenu .item .tit{font-size: 1.5em;}
-	.header-top nav .topMenu .item li{font-size: 1.2em; line-height: 35px;}
-	.info .left li{float: left;}
-
-}
-
-
-@media screen and (min-width: 1200px){
-	.header-top .logo{width: 280px;}
-	.header-top nav .topMenu .item .tit{font-size: 1.8em;}
-	.header-top nav .topMenu .item ul li{font-size: 1.4em; line-height: 33px;}
-	
-	.container form h2{display: inline-block;}
-	.container form fieldset{float: none;}
-	
-	
-}
-
-
-/* 
-@media screen and (min-width: 50em) {
-	.toggleView {
-	  display: inline-block;
-	}
-	.grid-view {
-	  grid-template-columns: 1fr 1fr 1fr;
-	}
-	.grid-view .course-weeks {
-	  display: none;
-	}
-  }
-  
-  @media screen and (min-width: 70em) {
-  	.grid-view {
-	  grid-template-columns: 1fr;
-	}
-  } */
-	
-
-	
-
-
-
-
-

@@ -1,206 +1,124 @@
-
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Cat Smart</title>
-      <meta name="Pet shop" content="Especially for cat">
-      <meta name="author" content="Sunhwa Cheon">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/reset.css">
-      <link rel="stylesheet" href="css/index.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>Cat Smart</title>
+    <meta name="Pet shop" content="Especially for cat">
+    <meta name="author" content="Sunhwa Cheon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/wetfood.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="header-top">
+  
+        <!-- Search for a product (non-functional) -->
+       <div class="topbar">
+         <form>
+           <fieldset class="searchbar">
+             <label for="search"></label>
+             <input type="text" name="search" id="search" placeholder="Search anything!" oninput="loadProductByName(event)">
+           </fieldset>
+           <button type="button" class="searchbtn"><i class="material-icons">search</i></button>
+         </form>
+   
+         <!-- Additional nav links -->
+         <ul class="top-icon">
+           <li><a href="#"><span class="material-icons" id="listNum">favorite_border</span></a></li>
+           <li><a href="#"><span class="material-icons cart">shopping_cart</span></a><div class="num" id="cartNum"></div></li>
+         </ul>
+       </div>
+ 
+       <!-- Site logo -->
+       <div class="logo">
+         <a href="index.html"><img src="img/catsmart-logo.png" alt="PetSmart Logo" class="logoimg"></a>
+       </div>
+ 
       
-    </head>
-    <body>
-      <header class="header-top">
-  
-         <!-- Search for a product (non-functional) -->
-      <div class="topbar">
-        <form>
-          <fieldset class="searchbar">
-            <label for="search"></label>
-            <input type="text" name="search" id="search" placeholder="Search anything!" oninput="loadProductByName(event)">
-          </fieldset>
-          <button type="button" class="searchbtn"><i class="material-icons">search</i></button>
-        </form>
-  
-        <!-- Additional nav links -->
-        <ul class="top-icon">
-          <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
-          <li><a href="#"><span class="material-icons cart">shopping_cart</span></a><div class="num" id="cartNum"></div></li>
-        </ul>
-      </div>
-  
-        <!-- Site logo -->
-        <div class="logo">
-          <a href="index.html"><img src="img/catsmart-logo.png" alt="PetSmart Logo" class="logoimg"></a>
-        </div>
-  
-       
-  
-        <!-- Navigation menu and toggle button (non-functional) -->
-        <nav>
-          <div class="mymanu">
-            <input type="checkbox" id="manuicon">
-            <aside>
-              <label for="manuicon"><i></i><i></i><i></i></label>
-              <ul class="mypage">
-                <a href="#"><i class="material-icons">person</i><li>My Page</li>
-                </a>
-              </ul>
-              <ul class="mypagelist">
-                <li><a><i class="material-icons">arrow_right</i>My Order</a></li>
-                <li><a><i class="material-icons">arrow_right</i>My Reservation</a></li>
-                <li><a><i class="material-icons">arrow_right</i>QnA</a></li>
-              </ul>
-            </aside>
-          </div>
-      
-          <div class="topMenu">
-            <div class="item">
-              <p class="tit">Food</p>
-              <ul>
-                <li>Wet Food</li>
-                <li>Dry Food</li>
-                <li>Catnip & Grass</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="tit">Litter</p>
-              <ul>
-                <li>Litter</li>
-                <li>Litter Boxes</li>
-                <li>Odor & Stain Removers</li>
-                <li>Litter Scoops</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="tit">Toys</p>
-              <ul>
-                <li>Feather Toys</li>
-                <li>Balls</li>
-                <li>Laser Toys</li>
-                <li>Catnip Toys</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="tit">Furniture</p>
-              <ul>
-                <li>Cat House</li>
-                <li>Beds</li>
-                <li>Bed Mats</li>
-                <li>Windows Perches</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="tit">Grooming</p>
-              <ul>
-                <li>Cat House</li>
-                <li>Beds</li>
-                <li>Bed Mats</li>
-                <li>Windows Perches</li>
-              </ul>
-            </div>
-            <div class="item">
-              <p class="tit">Wellness</p>
-              <ul>
-                <li>Cat House</li>
-                <li>Beds</li>
-                <li>Bed Mats</li>
-                <li>Windows Perches</li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      
-      </header>
-  
-      <!-- Main contents -->
-      <main>
-        <header class="container">
-          <h1>Wet Food</h1>
-          <h2>Filters</h2>
-  
-          <!-- Filtering product form -->
-          <form>
-           <fieldset>
-              <label for="sort">Show</label>
-              <select name="courseCategory" id="courseCategory">
-                <option value="all">All Products</option>
-                <option value="pouch">Pouch</option>
-                <option value="can">Can</option>
-                <option value="plastic container">Plastic Container</option>
-              </select>
-            </fieldset>
-            <fieldset>
-              <legend>Age</legend>
-              <ul>
-                <li><input type="checkbox" name="Age" value="Kitten" id="Kitten"> <label for="Kitten">Kitten</label></li>
-                <li><input type="checkbox" name="Age" value="1~3 Years" id="1~3 Years"> <label for="1~3 Years">1~3 Years</label></li>
-                <li><input type="checkbox" name="Age" value="4~6 Years" id="4~6 Years"> <label for="4~6 Years">4~6 Years</label></li>
-                <li><input type="checkbox" name="Age" value="7~10 Years" id="7~10 Years"> <label for="7~10 Years">7~10 Years</label></li>
-                <li><input type="checkbox" name="Age" value="10~ Years" id="10~ Years"> <label for="10~ Years">10~ Years</label></li>
-              </ul>
-            </fieldset>
-            
-            <fieldset>
-              <legend>Rating above</legend>
-              <ol>
-                <li>
-                  <input type="radio" name="rating" value="4" id="aboveFour">
-                  <label for="aaboveFour">
-                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i>
-                  </label>
-                </li>
-                <li>
-                  <input type="radio" name="rating" value="3" id="aboveThree">
-                  <label for="aboveThree">
-                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
-                  </label>
-                </li>
-                <li>
-                  <input type="radio" name="rating" value="2" id="aboveTwo">
-                  <label for="aboveTwo">
-                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
-                  </label>
-                </li>
-                <li>
-                  <input type="radio" name="rating" value="1" id="aboveOne">
-                  <label for="aboveOne">
-                    <i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
-                  </label>
-                </li>
-              </ol>
-            </fieldset>
-          </form>
-        </header>
-  
-        <section>
-          <button id="toggleView" class="toggleView">Change Arrey</button>
-          <div id="products"></div>
-        </section>
-  
-        <!-- Indicate current page number -->
-        <footer class="center">
-          <p>1-6 of 127 products found</p>
-          <nav aria-label="Product Pages">
-            <a href="#" aria-label="Previous page">prev</a>
-            <ol>
-              <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-              <li><a href="#" aria-label="Page 2">2</a></li>
-              <li><a href="#" aria-label="Page 3">3</a></li>
-              <li><a href="#" aria-label="Page 4">4</a></li>
-              <li><a href="#" aria-label="Page 5">5</a></li>
-            </ol>
-            <a href="#" aria-label="Next page">next</a>
-          </nav>
-        </footer>
-      </main>
-  
-      <!-- Copyright information and SNS icons -->
-      <footer class="info">
+ 
+       <!-- Navigation menu and toggle button (non-functional) -->
+       <nav>
+         <div class="mymanu">
+           <input type="checkbox" id="manuicon">
+           <aside>
+             <label for="manuicon"><i></i><i></i><i></i></label>
+             <ul class="mypage">
+               <a href="#"><i class="material-icons">person</i><li>My Page</li>
+               </a>
+             </ul>
+             <ul class="mypagelist">
+               <li><a><i class="material-icons">arrow_right</i>My Order</a></li>
+               <li><a><i class="material-icons">arrow_right</i>My Reservation</a></li>
+               <li><a><i class="material-icons">arrow_right</i>QnA</a></li>
+             </ul>
+           </aside>
+         </div>
+     
+         <div class="topMenu">
+           <div class="item">
+             <p class="tit">Food</p>
+             <ul>
+               <li><a>Wet Food</a></li>
+               <li><a>Dry Food</a></li>
+               <li><a>Catnip & Grass</a></li>
+             </ul>
+           </div>
+           <div class="item">
+             <p class="tit">Litter</p>
+             <ul>
+               <li><a>Litter</a></li>
+               <li><a>Litter Boxes</a></li>
+               <li><a>Odor Removers</a></li>
+               <li><a>Litter Scoops</a></li>
+             </ul>
+           </div>
+           <div class="item">
+             <p class="tit">Toys</p>
+             <ul>
+               <li><a>Feather Toys</a></li>
+               <li><a>Balls</a></li>
+               <li><a>Laser Toys</a></li>
+               <li><a>Catnip Toys</a></li>
+             </ul>
+           </div>
+           <div class="item">
+             <p class="tit">Furniture</p>
+             <ul>
+               <li><a>Cat House</a></li>
+               <li><a>Beds</a></li>
+               <li><a>Bed Mats</a></li>
+               <li><a>Windows Perches</a></li>
+             </ul>
+           </div>
+           <div class="item">
+             <p class="tit">Grooming</p>
+             <ul>
+               <li><a>Cat House</a></li>
+               <li><a>Beds</a></li>
+               <li><a>Bed Mats</a></li>
+               <li><a>Windows Perches</a></li>
+             </ul>
+           </div>
+           <div class="item">
+             <p class="tit">Wellness</p>
+             <ul>
+               <li><a>Cat House</a></li>
+               <li><a>Beds</a></li>
+               <li><a>Bed Mats</a></li>
+               <li><a>Windows Perches</a></li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+     
+     </header>
+    
+
+    <footer class="info">
         <p>&copy; Copyright, 2019. Sunhwa Cheon</p>
         <nav aria-label="Legal">
           <ul class="left">
@@ -214,10 +132,6 @@
           <li><a href="#"><img src="https://img.icons8.com/offices/16/000000/instagram-new.png"></a></li>
           <li><a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"></a></li>
         </ul>
-      </footer>
-  
-  
-      <script src="js/index.js"></script>
-  
-    </body>
-  </html>
+    </footer>
+</body>
+</html>
