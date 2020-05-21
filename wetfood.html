@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="css/index.css">
       <link rel="stylesheet" href="css/wetfood.css">
       <link rel="stylesheet" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       
     </head>
@@ -124,7 +124,7 @@
           <h1>Wet Food</h1>
         </header>
         <section class="filter">
-          <h2>Filters</h2>
+          <h3>Filters</h3>
           <form>
            <fieldset>
               <label for="sort">Show</label>
@@ -194,7 +194,11 @@
         <!-- Indicate current page number -->
         <footer class="center">
           <p>1-6 of 127 products found</p>
-          <nav aria-label="Product Pages">
+          <input type="button" id="first" onclick="firstPage()" value="first" />
+          <input type="button" id="next" onclick="nextPage()" value="next" />
+          <input type="button" id="previous" onclick="previousPage()" value="previous" />
+          <input type="button" id="last" onclick="lastPage()" value="last" />
+          <!-- <nav aria-label="Product Pages">
             <a href="#" aria-label="Previous page">prev</a>
             <ol>
               <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
@@ -204,7 +208,7 @@
               <li><a href="#" aria-label="Page 5">5</a></li>
             </ol>
             <a href="#" aria-label="Next page">next</a>
-          </nav>
+          </nav> -->
         </footer>
       </main>
   
@@ -226,7 +230,7 @@
       </footer>
   
   
-      <script src="js/index.js"></script>
+      <script src="js/wetfood.js"></script>
   
     </body>
   </html>

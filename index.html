@@ -8,130 +8,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/wetfood.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <header class="header-top">
-  
-        <!-- Search for a product (non-functional) -->
-       <div class="topbar">
-         <form>
-           <fieldset class="searchbar">
-             <label for="search"></label>
-             <input type="text" name="search" id="search" placeholder="Search anything!" oninput="loadProductByName(event)">
-           </fieldset>
-           <button type="button" class="searchbtn"><i class="material-icons">search</i></button>
-         </form>
-   
-         <!-- Additional nav links -->
-         <ul class="top-icon">
-           <li><a href="#"><span class="material-icons" id="listNum">favorite_border</span></a></li>
-           <li><a href="#"><span class="material-icons cart">shopping_cart</span></a><div class="num" id="cartNum"></div></li>
+  <header class="header-top">
+        
+    <!-- Search for a product (non-functional) -->
+   <div class="topbar">
+     <div class="logo">
+       <a href="index.html"><img src="img/catsmart-logo.png" alt="PetSmart Logo" class="logoimg"></a>
+     </div>
+     <div class="user">
+       <form>
+         <fieldset class="searchbar">
+           <label for="search"></label>
+           <input type="text" name="search" id="search" placeholder="Search anything!" oninput="loadProductByName(event)">
+         </fieldset>
+         <button type="button" class="searchbtn"><i class="material-icons">search</i></button>
+       </form>
+ 
+       <!-- Additional nav links -->
+       <ul class="top-icon">
+         <li><a href=""><img src="./img/heart.png" alt="heart image">Sign in</a></li>
+         <li><a href="#"><span class="material-icons" id="listNum">favorite_border</span></a></li>
+         <li><a href="#"><span class="material-icons cart">shopping_cart</span></a><div class="num" id="cartNum"></div></li>
+       </ul>
+     </div>
+   </div>
+
+   <!-- Site logo -->
+   <nav class="mobilemenu">
+     <div class="mymanu">
+       <input type="checkbox" id="manuicon">
+       <aside>
+         <label for="manuicon"><i></i><i></i><i></i></label>
+         <ul class="mypage">
+           <a href="#"><i class="material-icons">person</i><li>My Page</li>
+           </a>
+         </ul>
+         <ul class="mypagelist">
+           <li><a><i class="material-icons">arrow_right</i>My Order</a></li>
+           <li><a><i class="material-icons">arrow_right</i>My Reservation</a></li>
+           <li><a><i class="material-icons">arrow_right</i>QnA</a></li>
+         </ul>
+       </aside>
+     </div>
+   </nav>
+   <nav>
+     <div class="topMenu">
+       <div class="item">
+         <p class="tit">Food</p>
+         <ul>
+           <li><a>Wet Food</a></li>
+           <li><a>Dry Food</a></li>
+           <li><a>Catnip & Grass</a></li>
          </ul>
        </div>
- 
-       <!-- Site logo -->
-       <div class="logo">
-         <a href="index.html"><img src="img/catsmart-logo.png" alt="PetSmart Logo" class="logoimg"></a>
+       <div class="item">
+         <p class="tit">Litter</p>
+         <ul>
+           <li><a>Litter</a></li>
+           <li><a>Litter Boxes</a></li>
+           <li><a>Odor Removers</a></li>
+           <li><a>Litter Scoops</a></li>
+         </ul>
        </div>
+       <div class="item">
+         <p class="tit">Toys</p>
+         <ul>
+           <li><a>Feather Toys</a></li>
+           <li><a>Balls</a></li>
+           <li><a>Laser Toys</a></li>
+           <li><a>Catnip Toys</a></li>
+         </ul>
+       </div>
+       <div class="item">
+         <p class="tit">Furniture</p>
+         <ul>
+           <li><a>Cat House</a></li>
+           <li><a>Beds</a></li>
+           <li><a>Bed Mats</a></li>
+           <li><a>Windows Perches</a></li>
+         </ul>
+       </div>
+       <div class="item">
+         <p class="tit">Grooming</p>
+         <ul>
+           <li><a>Cat House</a></li>
+           <li><a>Beds</a></li>
+           <li><a>Bed Mats</a></li>
+           <li><a>Windows Perches</a></li>
+         </ul>
+       </div>
+       <div class="item">
+         <p class="tit">Wellness</p>
+         <ul>
+           <li><a>Cat House</a></li>
+           <li><a>Beds</a></li>
+           <li><a>Bed Mats</a></li>
+           <li><a>Windows Perches</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
  
+  </header>
+     <main>
+       <div class="carousel-container">
+         <div class="carousel-slide">
+           <img src="./img/Nutrience_big.jpeg" alt="" id="lastClone">
+           <img src="./img/APR_App.jpeg" alt="">
+           <img src="./img/Nutrience_big.jpeg" alt="">
+           <img src="./img/Nutrience_big.jpeg" alt="" id="firstClone">
+         </div>
+         <button id="prevBtn">prev</button>
+         <button id="nextBtn">next</button>
+       </div>
+       <section>
+         <h2>What's new</h2>
+         <ul>
+           <li><a href=""><img src="./img/Halo.png" alt=""><h3>Halo</h3></a></li>
+           <li><a href=""><img src="./img/RoyalCanin.png" alt=""><h3>Royal Canin</h3></a></li>
+           <li><a href=""><img src="./img/ScienceDiet.png" alt=""><h3>Science Diet</h3></a></li>
+           <li><a href=""><img src="./img/Blue.png" alt=""><h3>Blue</h3></a></li>
+         </ul>
+         <span><a href="">See more brand ></a></span>
+       </section>
+       <section class="history">
+        <h2>Browsing history</h2>
+        <ul>
+          <li><a href=""><img src="./img/can1.jpg" alt=""></a></li>
+          <li><a href=""><img src="./img/can2.jpg" alt=""></a></li>
+          <li><a href=""><img src="./img/can3.jpg" alt=""></a></li>
+          <li><a href=""><img src="./img/can7.jpg" alt=""></a></li>
+          <li><a href=""><img src="./img/can5.jpg" alt=""></a></li>
+          <li><a href=""><img src="./img/can9.jpg" alt=""></a></li>
+          <li><a href=""><img src="./img/can11.jpg" alt=""></a></li>
+          <li><a href=""><img src="./img/can15.jpg" alt=""></a></li>
+        </ul>
+      </section>
+       <section class="Featured">
+        <h2>Featured food brand</h2>
+        <ul>
+          <li><a href=""><img src="./img/merrick.jpeg" alt=""><h3>Merrick</h3></a></li>
+          <li><a href=""><img src="./img/nourish.jpeg" alt=""><h3>Simple Nourish</h3></a></li>
+          <li><a href=""><img src="./img/blue buffalo.jpeg" alt=""><h3>Blue</h3></a></li>
+          <li><a href=""><img src="./img/nutrience.jpeg" alt=""><h3>Nutrience</h3></a></li>
+        </ul>
+        <span><a href="">See more brand ></a></span>
+      </section>
       
- 
-       <!-- Navigation menu and toggle button (non-functional) -->
-       <nav>
-         <div class="mymanu">
-           <input type="checkbox" id="manuicon">
-           <aside>
-             <label for="manuicon"><i></i><i></i><i></i></label>
-             <ul class="mypage">
-               <a href="#"><i class="material-icons">person</i><li>My Page</li>
-               </a>
-             </ul>
-             <ul class="mypagelist">
-               <li><a><i class="material-icons">arrow_right</i>My Order</a></li>
-               <li><a><i class="material-icons">arrow_right</i>My Reservation</a></li>
-               <li><a><i class="material-icons">arrow_right</i>QnA</a></li>
-             </ul>
-           </aside>
-         </div>
-     
-         <div class="topMenu">
-           <div class="item">
-             <p class="tit">Food</p>
-             <ul>
-               <li><a>Wet Food</a></li>
-               <li><a>Dry Food</a></li>
-               <li><a>Catnip & Grass</a></li>
-             </ul>
-           </div>
-           <div class="item">
-             <p class="tit">Litter</p>
-             <ul>
-               <li><a>Litter</a></li>
-               <li><a>Litter Boxes</a></li>
-               <li><a>Odor Removers</a></li>
-               <li><a>Litter Scoops</a></li>
-             </ul>
-           </div>
-           <div class="item">
-             <p class="tit">Toys</p>
-             <ul>
-               <li><a>Feather Toys</a></li>
-               <li><a>Balls</a></li>
-               <li><a>Laser Toys</a></li>
-               <li><a>Catnip Toys</a></li>
-             </ul>
-           </div>
-           <div class="item">
-             <p class="tit">Furniture</p>
-             <ul>
-               <li><a>Cat House</a></li>
-               <li><a>Beds</a></li>
-               <li><a>Bed Mats</a></li>
-               <li><a>Windows Perches</a></li>
-             </ul>
-           </div>
-           <div class="item">
-             <p class="tit">Grooming</p>
-             <ul>
-               <li><a>Cat House</a></li>
-               <li><a>Beds</a></li>
-               <li><a>Bed Mats</a></li>
-               <li><a>Windows Perches</a></li>
-             </ul>
-           </div>
-           <div class="item">
-             <p class="tit">Wellness</p>
-             <ul>
-               <li><a>Cat House</a></li>
-               <li><a>Beds</a></li>
-               <li><a>Bed Mats</a></li>
-               <li><a>Windows Perches</a></li>
-             </ul>
-           </div>
-         </div>
-       </nav>
-     
-     </header>
+      <section class="service">
+        <h2>Service</h2>
+        <ul>
+          <li><a href=""><img src="./img/grooming.png" alt=""><h3>Grooming</h3></a></li>
+          <li><a href=""><img src="./img/training.png" alt=""><h3>Training</h3></a></li>
+          <li><a href=""><img src="./img/camping.png" alt=""><h3>Daycare</h3></a></li>
+          <li><a href=""><img src="./img/hotel.png" alt=""><h3>Hotel</h3></a></li>
+        </ul>
+      </section>
+     </main>
     
 
     <footer class="info">
-        <p>&copy; Copyright, 2019. Sunhwa Cheon</p>
-        <nav aria-label="Legal">
-          <ul class="left">
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Accessibility Policy</a></li>
-          </ul>
-        </nav>
-        <ul class="right">
-          <li><a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"></a></li>
-          <li><a href="#"><img src="https://img.icons8.com/offices/16/000000/instagram-new.png"></a></li>
-          <li><a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"></a></li>
+      <nav>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Charities</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Treats program</a></li>
         </ul>
+      </nav>
+      <ul class="sns">
+        <li><a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"></a></li>
+        <li><a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png"></a></li>
+        <li><a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"></a></li>
+      </ul>
+      <p>&copy; Copyright, 2020. Stella Cheon</p>
+      <nav>
+        <ul class="left">
+          <li><a href="#">Recalls</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Internet-based ads</a></li>
+        </ul>
+      </nav>
+        
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

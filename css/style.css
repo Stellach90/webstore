@@ -1,18 +1,18 @@
-/*color theme:
-backtype: #ffffff;
-maincolor: #0068b3;
-babypink: #f0b5b1;
-grey: #606060;
-pointcolor: #e03c32;
-*/
 
-*{font-family: 'Comic Neue', cursive;}
+:root{
+    --main: #007db4;
+    --white: #ffffff;
+    --black: #000000;
+    --lightgrey: #b0b0b0;
+}
+
+*{font-family: 'Roboto', sans-serif;}
 ul, ol, li {list-style: none;}
 dd{margin: 0;}
 a{text-decoration: none; color: #000000; cursor: pointer;}
 h1{font-size: 2.2em;}
-h2{font-size: 1.2em;}
-h3{font-size: 1em;}
+h2{font-size: 1.5em;}
+h3{font-size: 1.2em;}
 h4,p{font-size: 1em;}
 h5{font-size: 0.8em;}
 legend{font-size: 1.2em;}
