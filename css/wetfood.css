@@ -45,6 +45,7 @@ main section article p{padding: 1em 1.8em; font-size: 1em; width: 80%; height: 5
 
 main section article form{width: 75%; margin: auto;}
 main section article form fieldset{float: left; width: 50%;}
+main section article form fieldset select{width: 100%;}
 main section article form fieldset ul{padding-top: 1.2em;}
 main section article form fieldset ul li+li{padding-top: 0.7em;}
 main section article form footer dl{width: 100%; overflow: hidden; padding-top: 20px;}
