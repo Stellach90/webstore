@@ -15,9 +15,9 @@
 .container form fieldset ol li{display: block;}
 .container form fieldset ol li i{position: relative; color: #f0b5b1; font-size: 1.1em;}
 
-main{margin: auto; width: 90%; padding: 4em 1em; overflow: hidden;}
+main{margin: auto; width: 85%; padding: 4em 1em; overflow: hidden;}
 
-main .filter{width: 15%; float: left; border: 1px solid var(--lightgrey); border-radius: 0.5em; padding: 1em;}
+main .filter{width: 15%; float: left; border: 1px solid var(--main); border-radius: 1em; padding: 1em;}
 main .filter h2{text-align: left;} 
 main .filter form{display: grid; padding-top: 1em;}
 main .filter form fieldset{border-style: none; display: inline-block;}
@@ -39,9 +39,9 @@ main section article{padding-top: 40px;}
 main section article:nth-child(n+4){padding-top: 120px;}
 main section article .productimg{position: relative; display: inline-block;}
 main section article img{cursor: pointer;}
-main section article h3{width: 90%; height: 4em; margin: auto;}
-main section article h3 a{font-size: 1.5em;}
-main section article p{padding: 1em 1.8em; font-size: 1em; width: 80%; height: 5em; margin: auto; margin-bottom: 0;}
+main section article h3{width: 90%; height: 4em; margin: auto; padding-top: 2em;}
+main section article h3 a{font-size: 1.2em;}
+main section article p{padding: 1em 1.8em; font-size: 1em; width: 90%; height: 5em; margin: auto; margin-bottom: 0;}
 
 main section article form{width: 75%; margin: auto;}
 main section article form fieldset{float: left; width: 50%;}

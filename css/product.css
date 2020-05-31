@@ -1,1 +1,34 @@
 div input, button{display: inline-block; padding: 1em;}
+button{border: none;}
+.t_r{text-align: right;}
+.t_c{text-align: center;}
+
+main{margin: auto; width: 85%; padding: 4em 1em; overflow: hidden;}
+.product_img{width: 55%; float: left; display: grid; grid-template-columns: 1fr 5fr;;}
+.product_img ul{display: grid;}
+.product_img img{width: 80%;}
+.product_info{width: 45%; float: right;}
+
+.product{padding: 2em;}
+.product a:hover{color: var(--main);}
+.product dl dd .material-icons{font-size: 1em;}
+.product section{padding-top: 1em; text-align: center;}
+.product section data ins{text-decoration: none; padding-left: 15px; font-size: 1.4em; font-weight: bold; color: #e03c32;}
+.buy{display: grid; grid-template-columns: 1fr 1fr; text-align: center; align-items: center; padding-top: 2em;}
+.tasteinfo{display: grid; row-gap: 1.5em;}
+.bottons{padding: 2em 0; display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 1em; text-align: center;}
+.bottons a, .subscribe{padding: 1em; border: 1px solid var(--main); border-radius: 1em;}
+.bottons a:hover{background-color: var(--main); color: var(--white);}
+.bottons a:hover button{color: var(--white);}
+.bottons button{background-color: transparent;}
+.subscribe{padding: 1.5em; cursor: pointer;}
+.subscribe:hover{background-color: var(--main); color: var(--white);}
+.product section button{padding: 0.3em; background-color: unset;}
+
+.product section button span{font-size: 1.4em;}
+
+
+
+del::before{content: "$";}
+ins::before{content: "$";}
+.brand::after{content: " >";}

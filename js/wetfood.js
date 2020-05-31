@@ -227,7 +227,7 @@
 
 
     return `<article class="product">
-    <div class="productimg"><a>
+    <div class="productimg"><a href="./product.html">
       <img src="${product.imgsrc}" alt="Product Image"></a>${greatdeal} ${lowstock}</div>
     
     
@@ -238,7 +238,6 @@
 
       <footer>
         <dl>
-          <dt>Rating</dt>
           <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
         </dl>
         <div class="buy">
