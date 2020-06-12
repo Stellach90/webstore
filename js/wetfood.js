@@ -350,3 +350,13 @@ document.getElementById(`addList`).addEventListener('click',addOneToList);
 //       dim.style.backgroundColor = 'white';
 //     });
 // }
+
+
+
+
+function fu() {
+  var opened = window.open("");
+  opened.document.write("<html><head><title>MyTitle</title></head><body>test</body></html>");
+}
+
+document.querySelector('.product').addEventListener('click',fu());
