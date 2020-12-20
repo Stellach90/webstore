@@ -64,10 +64,10 @@ b{font-weight: 700;}
 .header-top nav .cnt {height: 200px; clear: both;}
 
 .header-top .user{display: grid; grid-template-columns: 2fr 1fr; align-items: center; justify-items: stretch;}
-.header-top .user form{width: 100%; height: 50%; display: grid; grid-template-columns: auto 2em; border: 1px solid #f0b5b1; border-radius: 0.5em; padding: 2px;}
-.header-top .user form .searchbar{border-style: none; padding: 0.5em;}
-.header-top .user form .searchbtn{border-style: none; font-size: 0.7em; cursor: pointer; background-color: #ffffff;}
-.header-top .user form .searchbar input{width: 100%; height: 2em; border: none;}
+.header-top .user form{width: 100%; height: 70%; display: grid; grid-template-columns: auto 2em; border: 1px solid #f0b5b1; border-radius: 0.5em; padding: 2px;}
+.header-top .user form .searchbar{border-style: none; padding: 0 0.5em;}
+.header-top .user form .searchbtn{border-style: none; font-size: 0.7em; cursor: pointer; background-color: transparent;}
+.header-top .user form .searchbar input{width: 100%; line-height: 3; border: none; background: transparent;}
 .header-top .user form .searchbtn i{font-size: 3em;}
 
 .header-top .top-icon{display: grid; grid-template-columns: 3fr 1fr 1fr; justify-items: end; padding: 0; height: 50%; font-size: 0.7em;}
